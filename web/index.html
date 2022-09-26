@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // get
+      fetch('http://localhost:8989/api/v1/users');
+
+      // insert
+      // fetch('http://localhost:8989/api/v1/users', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify({
+      //     name: '井之上瀧奈',
+      //     age: 16,
+      //   }),
+      // });
+
+      // // delete
+      // fetch('http://localhost:8989/api/v1/users/6', {
+      //   method: 'Delete',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      // });
+
+      // // update
+      fetch('http://localhost:8989/api/v1/users', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          id: 5,
+          age: 16,
+        }),
+      });
+    </script>
+  </body>
+</html>
